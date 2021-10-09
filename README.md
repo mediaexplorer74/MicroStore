@@ -38,8 +38,8 @@ I wanted to put down some thank you's here for folks/projects/websites that were
 - [TitleOS](https://github.com/TitleOS) - StoreLib and StoreWeb creator/author
 - [StoreLib](https://github.com/StoreDev/StoreLib) - DotNet library that provides APIs to interact with the various Microsoft Store endpoints.
 - [StoreWeb](https://github.com/StoreDev/StoreWeb) - An interface for StoreLib created in ASP.NET
-- [FluentStore]() - Fluent Store project
-- [Microsoft]() - Thanx for all your open-source samples of your great code :)
+- [FluentStore](https://github.com/yoshiask/FluentStore) - Fluent Store project
+- [Microsoft](https://github.com/microsoft) - Thanx for all your open-source samples of your great code :)
 
 # License & Copyright
 
