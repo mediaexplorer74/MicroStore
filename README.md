@@ -5,10 +5,10 @@ This project started initially as a nighits/weekend project of mine to better un
 MS Store "System". =)
 
 # Screenshots
-![Shot 1](images/shot1.png)
-![Shot 2](images/shot2.png)
-![Shot 3](images/shot3.png)
-![Shot 4](images/shot4.png)
+![Shot 1](Images/shot1.png)
+![Shot 2](Images/shot2.png)
+![Shot 3](Images/shot3.png)
+![Shot 4](Images/shot4.png)
 
 The goals for this project were simple:
 - Write my first multi-threading UWP app using C#
