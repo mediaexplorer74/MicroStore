@@ -1,4 +1,4 @@
-﻿# MicroStore - a micro-Store app for direct downloading apps from MS Store
+﻿# MicroStore - a UWP app for direct downloading apps from MS Store
 
 MicroStore is a "Fluent Store" clone via porting some parts of .Net5 onto oldest base (15063). 
 This project started initially as a nighits/weekend project of mine to better understand 
