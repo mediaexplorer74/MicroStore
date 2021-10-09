@@ -11,7 +11,6 @@ MS Store "System". =)
 ![Shot 4](Images/shot4.png)
 
 The goals for this project were simple:
-- Write my first multi-threading UWP app using C#
 - Learn the inner workings of MS Store "entity"
 - Start to structure my code to match atomaric tasks as possible
 - Write the code in a way that made it readable and easier to understand for someone wanting to learn as I was
@@ -25,8 +24,12 @@ and areas of improvement which I just haven't had the time to get to yet.
 - Media Support: home icons, etc. (for the brave)
 
 
+# Architecture 
 
-There are also a couple DOCs which explains miscellaneous functionality. =)
+- Main project: MicroStore
+- Other projects are api, MVVM/Flurl decomiled libs
+
+Maybe, in future I 'll add some tech DOCs which explains miscellaneous functionality... =)
 
 With best wishes,
 
@@ -43,4 +46,4 @@ I wanted to put down some thank you's here for folks/projects/websites that were
 
 # License & Copyright
 
-StoreApp is RnD project. AS-IS. No support. Distributed under the MIT License. 
+MicroStore is RnD project. AS-IS. No support. Distributed under the MIT License. 
