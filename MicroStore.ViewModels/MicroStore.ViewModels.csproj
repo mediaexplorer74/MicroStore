@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+   <Platforms>AnyCPU;x64;x86;ARM;ARM64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroStore.Services\MicroStore.Services.csproj" />
+    <ProjectReference Include="..\MicroStoreAPI\MicroStoreAPI.csproj" />
+    <ProjectReference Include="..\Microsoft.Toolkit.Mvvm\Microsoft.Toolkit.Mvvm.csproj" />
+    <ProjectReference Include="..\MicrosoftStore\MicrosoftStore.csproj" />
+    <ProjectReference Include="..\StoreLib\StoreLib\StoreLib.csproj" />
+  </ItemGroup>
+
+</Project>

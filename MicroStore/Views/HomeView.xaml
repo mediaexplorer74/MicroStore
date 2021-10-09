@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="MicroStore.Views.HomeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MicroStore.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:viewmodels="using:MicroStore.ViewModels"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlBackgroundAccentBrush}">
+    <Page.Resources>
+        <viewmodels:HomeViewModel x:Name="ViewModel"/>
+    </Page.Resources>
+    
+    <interactivity:Interaction.Behaviors>
+        <core:EventTriggerBehavior EventName="Loading">
+            <core:InvokeCommandAction Command="{x:Bind ViewModel.LoadFeaturedCommand}"/>
+        </core:EventTriggerBehavior>
+    </interactivity:Interaction.Behaviors>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <controls:Carousel x:Name="FeaturedCarousel" ItemsSource="{x:Bind ViewModel.CarouselItems}"
+                           SelectedIndex="{x:Bind ViewModel.SelectedCarouselItemIndex, Mode=TwoWay}"
+                           SelectedItem="{x:Bind ViewModel.SelectedCarouselItem, Mode=TwoWay}"
+                           ItemMargin="16" ItemDepth="200">
+            <controls:Carousel.EasingFunction>
+                <CubicEase EasingMode="EaseOut" />
+            </controls:Carousel.EasingFunction>
+
+            <controls:Carousel.ItemTemplate>
+                <DataTemplate x:DataType="viewmodels:ProductDetailsViewModel">
+                    <Grid Padding="0,16">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <controls:ImageEx Source="{x:Bind GetHeroImage()}" Grid.RowSpan="2"/>
+                        <Grid Grid.Row="1" Padding="5" Background="{ThemeResource SystemControlBaseHighAcrylicElementBrush}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Viewbox MaxWidth="{Binding RelativeSource={RelativeSource Mode=Self}, Path=MaxHeight}" MaxHeight="100"
+                                     Grid.RowSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <Image>
+                                    <Image.Source>
+                                        <BitmapImage UriSource="{x:Bind AppIcon.Uri}"/>
+                                    </Image.Source>
+                                </Image>
+                            </Viewbox>
+                            <TextBlock Text="{x:Bind Product.ShortTitle}" FontWeight="Bold" Grid.Column="1" FontSize="20" TextTrimming="CharacterEllipsis"/>
+                            <TextBlock Text="{x:Bind Product.Subtitle}" Grid.Column="1" Grid.Row="1"/>
+                            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+                                <TextBlock Text="{x:Bind Product.RatingCount}" FontSize="14" VerticalAlignment="Center"/>
+                                <controls:RadialProgressBar Value="{Binding Product.AverageRating}">
+                                    <controls:RadialProgressBar.Resources>
+                                        <SolidColorBrush x:Key="RatingControlSelectedForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+                                    </controls:RadialProgressBar.Resources>
+                                </controls:RadialProgressBar>
+                            </StackPanel>
+                            <Button Grid.Column="1" Grid.RowSpan="3" HorizontalAlignment="Right"
+                                    Margin="0,0,10,0" Style="{ThemeResource AccentButtonStyle}"
+                                    FontWeight="SemiBold" Padding="10" Content="{x:Bind Product.DisplayPrice}"
+                                    Command="{x:Bind ViewProductCommand}" CommandParameter="{x:Bind Product}"/>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </controls:Carousel.ItemTemplate>
+        </controls:Carousel>
+    </Grid>
+</Page>

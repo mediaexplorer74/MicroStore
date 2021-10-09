@@ -1,0 +1,8 @@
+
+1 Switch to internal MVVM +
+2 Switch to internal XAML +
+3 Fix Refit +
+4 Compose all things +
+5 Package Downloader
+6 Fix app icons
+7 Refactor interface (fix many ui bugs) 
