@@ -9,16 +9,16 @@ This project started initially as a nighits/weekend project of mine to better un
 MS Store "System". =)
 
 ## Screenshots
-![Win11Tiny](Images/shot01.png)
-![Win11Tiny](Images/shot02.png)
-![Win11Tiny](Images/shot03.png)
-![Lumia640](Images/shot04.png)
-![Lumia640](Images/shot05.png)
-![Lumia640](Images/shot06.png)
-![Lumia640](Images/shot07.png)
-![Lumia640](Images/shot08.png)
-![Lumia640](Images/shot09.png)
-![Lumia640](Images/shot10.png)
+![Win11Tiny](Images/shot_01.png)
+![Win11Tiny](Images/shot_02.png)
+![Win11Tiny](Images/shot_03.png)
+![Lumia640](Images/shot_04.png)
+![Lumia640](Images/shot_05.png)
+![Lumia640](Images/shot_06.png)
+![Lumia640](Images/shot_07.png)
+![Lumia640](Images/shot_08.png)
+![Lumia640](Images/shot_09.png)
+![Lumia640](Images/shot_10.png)
 
 
 ## Progress
