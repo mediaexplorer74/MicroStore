@@ -1,4 +1,4 @@
-﻿# MicroStore - w10m branch
+﻿# MicroStore v1.0.1 - w10m branch
 ![Logo](Images/logo.png)
 
 A UWP app for direct installing apps from MS Store
