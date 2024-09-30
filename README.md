@@ -17,7 +17,6 @@ MS Store "System". =)
 ![Lumia640](Images/shot_06.png)
 ![Lumia640](Images/shot_07.png)
 ![Lumia640](Images/shot_08.png)
-![Lumia640](Images/shot_09.png)
 ![Lumia640](Images/shot_10.png)
 
 
