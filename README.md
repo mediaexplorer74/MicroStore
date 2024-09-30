@@ -8,10 +8,14 @@ MicroStore is a "Fluent Store" clone (but not fork) via porting some parts of .N
 This project started initially as a nighits/weekend project of mine to better understand 
 MS Store "System". =)
 
-## Screenshots (Andromeda "imitation" on my Notebook ))))
+## Screenshots
 ![Win11Tiny](Images/shot01.png)
 ![Win11Tiny](Images/shot02.png)
 ![Win11Tiny](Images/shot03.png)
+![Andromeda](Images/shot04.png)
+![Andromeda](Images/shot05.png)
+![Andromeda](Images/shot06.png)
+![Andromeda](Images/shot07.png)
 
 ## Progress
 - App succesfully started under W10M on my Lumia 950 with AndromedaOS 17686 (os build = 17134)

@@ -10,7 +10,7 @@
   <Identity
     Name="ME.MicroStoreV2p0p0"
     Publisher="CN=Admin"
-    Version="2.0.2.0" />
+    Version="2.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="282724f2-5e5f-4d03-8615-aa1978b1e200" PhonePublisherId="28000000-04f2-02f4-dd40-000500000200"/>
 
