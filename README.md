@@ -20,6 +20,7 @@ MS Store "System". =)
 ## Progress
 - App succesfully started under W10M on my Lumia 950 with AndromedaOS 17686 (os build = 17134)
 - Experimental Download "flyout" connected to Install button :)
+- Package Installer / Downloader malfunction (damaged / not realized properly, sadly!)
 
 ## Project goals
 The goals for this project were simple:
